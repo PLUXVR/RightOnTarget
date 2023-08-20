@@ -99,7 +99,5 @@ class ViewController: UIViewController {
         self.labelOutlet.text = String("Загаданное число: \(self.number)")
     }
     
-    @IBAction func aboutProgramm () {
-        self.present(secondViewController, animated: true, completion: nil)
-    }
+    
 }

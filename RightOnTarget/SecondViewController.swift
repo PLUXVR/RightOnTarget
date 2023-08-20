@@ -37,9 +37,6 @@ class SecondViewController: UIViewController {
         print("viewDidDisappear SecondViewController")
     }
     
-    @IBAction func backToGame () {
-        dismiss(animated: true, completion: nil)
-    }
-    
+ 
 }
 

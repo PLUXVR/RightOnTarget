@@ -66,9 +66,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="aboutProgramm" destination="BYZ-38-t0r" eventType="touchUpInside" id="nl8-Jf-kX2"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,31 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.834123222748815" y="83.07692307692308"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Do2-lc-K9L">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="jls-4t-Iur" customClass="SecondViewController" customModule="RightOnTarget" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ntr-5R-Tj9">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6C0-fP-lI5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="01q-X6-fxA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miT-Vu-TS3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="823" y="40"/>
+            <point key="canvasLocation" x="786.96682464454977" y="83.07692307692308"/>
         </scene>
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
