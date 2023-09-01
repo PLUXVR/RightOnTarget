@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     //сущность "Game"
     var game : Game!
+    //сущность "GameRound"
+    var gameRound: GameRound!
     
     @IBOutlet var sliderOutlet: UISlider!
     
@@ -26,8 +28,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        game = Game(startValue: 1, endValue: 50, rounds: 5)
-        updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
+        let generator = Generator()
+        game = Game(valueGenerator: generator, rounds: 5)
+        updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
     }
     
     //MARK: - Взаимодействие View - Model
@@ -35,24 +38,36 @@ class ViewController: UIViewController {
     @IBAction func checkNumber () {
         
         let numSlider = Int(sliderOutlet.value.rounded())
-        game.calculateScore(with: numSlider)
+        
+        var totalScore : Int {
+            var score = 0
+            
+            for _ in 1...game.lastRound {
+                score += game.currentRound.score
+            }
+            
+            return score
+        }
+        
+        game.currentRound.calculateScore(with: numSlider)
         
         if game.isGameEnded {
             
-            showAlertScore(score: game.score)
+            showAlertScore(score: totalScore)
             
             game.restartGame()
             
         } else {
+            
             game.startNewRound()
             
         }
-        updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
+        updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
     }
     
     //MARK: - Обновление текста загаданного значения
     
-    private func updateLabelWithSecretNumber (newText: String) {
+   func updateLabelWithSecretNumber (newText: String) {
         self.labelOutlet.text = String("Загаданное число: \(newText)")
     }
     
