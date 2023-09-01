@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
         let versionLabel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 20))
-        versionLabel.text = "Версия программы 1.2"
+        versionLabel.text = "Версия программы 1.3"
         self.view.addSubview(versionLabel)
     }
 
@@ -39,21 +39,11 @@ class ViewController: UIViewController {
         
         let numSlider = Int(sliderOutlet.value.rounded())
         
-        var totalScore : Int {
-            var score = 0
-            
-            for _ in 1...game.lastRound {
-                score += game.currentRound.score
-            }
-            
-            return score
-        }
-        
         game.currentRound.calculateScore(with: numSlider)
         
         if game.isGameEnded {
             
-            showAlertScore(score: totalScore)
+            showAlertScore(score: game.score)
             
             game.restartGame()
             
