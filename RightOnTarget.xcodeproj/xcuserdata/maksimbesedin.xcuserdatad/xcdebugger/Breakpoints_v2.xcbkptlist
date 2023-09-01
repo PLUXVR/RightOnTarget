@@ -3,4 +3,114 @@
    uuid = "92E698E8-29C5-42E9-B78C-6F65DEFB2C15"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RightOnTarget/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - 7bfb4d778c716957"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.game.getter : Swift.Optional&lt;RightOnTarget.Game&gt;"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - 897a4299b711e163"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.game.setter : Swift.Optional&lt;RightOnTarget.Game&gt;"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - eae37fa6a38c25ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.game.modify : Swift.Optional&lt;RightOnTarget.Game&gt;"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - 4fbfda4a2888e142"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.game.modify : Swift.Optional&lt;RightOnTarget.Game&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - 924c84b87f753952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; RightOnTarget.ViewController"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "9E4E7095-EBD6-4E40-B0EB-961E0968FD36 - 1d1bc8f5a95e1e15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RightOnTarget.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;RightOnTarget.ViewController&gt;"
+                  moduleName = "RightOnTarget"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimbesedin/Desktop/My%20iOS%20Projects/RightOnTarget/RightOnTarget/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
