@@ -15,6 +15,9 @@
 		9F23D3592A8C0C530018DF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F23D3572A8C0C530018DF51 /* LaunchScreen.storyboard */; };
 		9F3332B92A912E53008F2A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3332B82A912E53008F2A06 /* SecondViewController.swift */; };
 		9F3332BC2A913202008F2A06 /* TealButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3332BB2A913202008F2A06 /* TealButton.swift */; };
+		9F4E2AC22A93E549009B793D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E2AC12A93E549009B793D /* Game.swift */; };
+		9FFD93A52AA071E900B3ABC0 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD93A42AA071E900B3ABC0 /* GameRound.swift */; };
+		9FFD93A72AA072BE00B3ABC0 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD93A62AA072BE00B3ABC0 /* Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		9F23D35A2A8C0C530018DF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F3332B82A912E53008F2A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9F3332BB2A913202008F2A06 /* TealButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealButton.swift; sourceTree = "<group>"; };
+		9F4E2AC12A93E549009B793D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9FFD93A42AA071E900B3ABC0 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
+		9FFD93A62AA072BE00B3ABC0 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		9F23D34B2A8C0C530018DF51 /* RightOnTarget */ = {
 			isa = PBXGroup;
 			children = (
+				9F4E2AC02A93E4FA009B793D /* Model */,
 				9F3332BA2A9131CF008F2A06 /* Buttons */,
 				9F23D34C2A8C0C530018DF51 /* AppDelegate.swift */,
 				9F23D34E2A8C0C530018DF51 /* SceneDelegate.swift */,
@@ -79,6 +86,16 @@
 				9F3332BB2A913202008F2A06 /* TealButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		9F4E2AC02A93E4FA009B793D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FFD93A62AA072BE00B3ABC0 /* Generator.swift */,
+				9FFD93A42AA071E900B3ABC0 /* GameRound.swift */,
+				9F4E2AC12A93E549009B793D /* Game.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3332B92A912E53008F2A06 /* SecondViewController.swift in Sources */,
+				9FFD93A72AA072BE00B3ABC0 /* Generator.swift in Sources */,
+				9F4E2AC22A93E549009B793D /* Game.swift in Sources */,
 				9F23D3512A8C0C530018DF51 /* ViewController.swift in Sources */,
 				9F23D34D2A8C0C530018DF51 /* AppDelegate.swift in Sources */,
 				9F3332BC2A913202008F2A06 /* TealButton.swift in Sources */,
+				9FFD93A52AA071E900B3ABC0 /* GameRound.swift in Sources */,
 				9F23D34F2A8C0C530018DF51 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluxar.RightOnTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -347,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluxar.RightOnTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

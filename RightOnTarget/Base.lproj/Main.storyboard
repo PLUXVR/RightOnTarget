@@ -56,7 +56,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemTealColor"/>
                                 <color key="thumbTintColor" systemColor="systemTealColor"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-eY-FzI">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-eY-FzI">
                                 <rect key="frame" x="642.33333333333337" y="334.66666666666669" width="137.66666666666663" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="О программе" cornerStyle="medium">
@@ -66,9 +66,6 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="aboutProgramm" destination="BYZ-38-t0r" eventType="touchUpInside" id="nl8-Jf-kX2"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -93,45 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.834123222748815" y="83.07692307692308"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Do2-lc-K9L">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="jls-4t-Iur" customClass="SecondViewController" customModule="RightOnTarget" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ntr-5R-Tj9">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKG-V9-vo3" customClass="TealButton" customModule="RightOnTarget" customModuleProvider="target">
-                                <rect key="frame" x="389" y="179.66666666666666" width="66" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                                <connections>
-                                    <action selector="backToGame" destination="jls-4t-Iur" eventType="touchUpInside" id="cr8-tG-idE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6C0-fP-lI5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="nKG-V9-vo3" firstAttribute="centerY" secondItem="ntr-5R-Tj9" secondAttribute="centerY" id="Dmc-ll-2Ub"/>
-                            <constraint firstItem="nKG-V9-vo3" firstAttribute="centerX" secondItem="ntr-5R-Tj9" secondAttribute="centerX" id="tJv-qC-fFj"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="01q-X6-fxA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miT-Vu-TS3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="823" y="40"/>
+            <point key="canvasLocation" x="786.96682464454977" y="83.07692307692308"/>
         </scene>
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
