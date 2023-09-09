@@ -1,11 +1,5 @@
 import Foundation
 
-
-/**
- Сущность "Раунд"
- */
-
-
 protocol GameRoundProtocol {
     //количество заработанных очков
     var score : Int { get }
@@ -18,14 +12,14 @@ protocol GameRoundProtocol {
 class GameRound : GameRoundProtocol {
     
     var score: Int = 0
-    
     var currentSecretValue: Int = 0
     
+    // Инициализатор класса (секретное число)
     init(secretValue: Int) {
         currentSecretValue = secretValue
     }
     
-    //посчитать количество очков
+    // Посчитать количество очков за раунд
     func calculateScore(with value: Int) {
         if value > currentSecretValue {
             score += 50 - value + currentSecretValue
@@ -33,6 +27,6 @@ class GameRound : GameRoundProtocol {
             score += 50 - currentSecretValue + value
         } else {
             score += 50
-        }        
+        }
     }
 }

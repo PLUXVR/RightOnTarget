@@ -16,7 +16,7 @@ protocol GameProtocol {
 }
 
 class Game : GameProtocol {
-    
+    // Вычисляемое значение общего количества очков
     var score: Int {
         var totalScore: Int = 0
         for round in self.rounds {
@@ -24,10 +24,15 @@ class Game : GameProtocol {
         }
         return totalScore
     }
+    // Текущий раунд
     var currentRound: GameRoundProtocol!
+    // Массив раундов
     private var rounds: [GameRoundProtocol] = []
+    // Генератор секретного значения
     var secretValueGenerator: GeneratorProtocol
+    // Количество раундов
     private var roundsCount: Int!
+    // Булевое значение окончание игры
     var isGameEnded: Bool {
         if roundsCount == rounds.count {
             return true
@@ -36,26 +41,29 @@ class Game : GameProtocol {
         }
     }
     
-    //инициализатор класса? (минимальное и максимальное значения, количество раундов, сгенерировать случайное число)
+    // Инициализатор класса (генератор случайного числа, количество раундов, также при иницализации вызывается метод startNewRound чтобы на экране сразу после запуска появилось серетно значение и игра началась без дополнительных действий)
     init(valueGenerator: GeneratorProtocol, rounds: Int) {
         secretValueGenerator = valueGenerator
         roundsCount = rounds
         startNewRound()
     }
     
-    //начать игру заново
+    // Начать игру заново
     func restartGame() {
         rounds = []
         startNewRound()
     }
-    //начать игру
+    // Начать игру
     func startNewRound() {
+        // Сохраняем секретное значение в локальную переменную
         let newSecretValue = self.getNewSecretValue()
+        // Создаем экземпляр класса GameRound
         currentRound = GameRound(secretValue: newSecretValue)
+        // Добавляем экземпляр класса в массив раундов
         rounds.append( currentRound )
     }
-    
-        private func getNewSecretValue() -> Int {
-            return secretValueGenerator.getRandomValue()
-        }
+    // Генерация секретного числа
+    private func getNewSecretValue() -> Int {
+        secretValueGenerator.getRandomValue()
+    }
 }
