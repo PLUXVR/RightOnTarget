@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		9F23D34D2A8C0C530018DF51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D34C2A8C0C530018DF51 /* AppDelegate.swift */; };
 		9F23D34F2A8C0C530018DF51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D34E2A8C0C530018DF51 /* SceneDelegate.swift */; };
-		9F23D3512A8C0C530018DF51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D3502A8C0C530018DF51 /* ViewController.swift */; };
+		9F23D3512A8C0C530018DF51 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D3502A8C0C530018DF51 /* NumberViewController.swift */; };
 		9F23D3542A8C0C530018DF51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F23D3522A8C0C530018DF51 /* Main.storyboard */; };
 		9F23D3562A8C0C530018DF51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F23D3552A8C0C530018DF51 /* Assets.xcassets */; };
 		9F23D3592A8C0C530018DF51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F23D3572A8C0C530018DF51 /* LaunchScreen.storyboard */; };
-		9F3332B92A912E53008F2A06 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3332B82A912E53008F2A06 /* SecondViewController.swift */; };
+		9F307AAC2AB05298004D872D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F307AAB2AB05298004D872D /* Color.swift */; };
+		9F307AAE2AB052A7004D872D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F307AAD2AB052A7004D872D /* Game.swift */; };
+		9F307AB12AB052C7004D872D /* GameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F307AB02AB052C7004D872D /* GameFactory.swift */; };
+		9F307AB32AB052E7004D872D /* SecretValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F307AB22AB052E7004D872D /* SecretValue.swift */; };
+		9F307AB62AB05318004D872D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F307AB52AB05318004D872D /* MainViewController.swift */; };
+		9F3332B92A912E53008F2A06 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3332B82A912E53008F2A06 /* ColorViewController.swift */; };
 		9F3332BC2A913202008F2A06 /* TealButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3332BB2A913202008F2A06 /* TealButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +26,17 @@
 		9F23D3492A8C0C530018DF51 /* RightOnTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightOnTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F23D34C2A8C0C530018DF51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F23D34E2A8C0C530018DF51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F23D3502A8C0C530018DF51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F23D3502A8C0C530018DF51 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		9F23D3532A8C0C530018DF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F23D3552A8C0C530018DF51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F23D3582A8C0C530018DF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F23D35A2A8C0C530018DF51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F3332B82A912E53008F2A06 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9F307AAB2AB05298004D872D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9F307AAD2AB052A7004D872D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9F307AB02AB052C7004D872D /* GameFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFactory.swift; sourceTree = "<group>"; };
+		9F307AB22AB052E7004D872D /* SecretValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretValue.swift; sourceTree = "<group>"; };
+		9F307AB52AB05318004D872D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9F3332B82A912E53008F2A06 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		9F3332BB2A913202008F2A06 /* TealButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TealButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,17 +70,30 @@
 		9F23D34B2A8C0C530018DF51 /* RightOnTarget */ = {
 			isa = PBXGroup;
 			children = (
+				9F307AAA2AB0527C004D872D /* Model */,
 				9F3332BA2A9131CF008F2A06 /* Buttons */,
 				9F23D34C2A8C0C530018DF51 /* AppDelegate.swift */,
 				9F23D34E2A8C0C530018DF51 /* SceneDelegate.swift */,
-				9F23D3502A8C0C530018DF51 /* ViewController.swift */,
-				9F3332B82A912E53008F2A06 /* SecondViewController.swift */,
+				9F23D3502A8C0C530018DF51 /* NumberViewController.swift */,
+				9F3332B82A912E53008F2A06 /* ColorViewController.swift */,
+				9F307AB52AB05318004D872D /* MainViewController.swift */,
 				9F23D3522A8C0C530018DF51 /* Main.storyboard */,
 				9F23D3552A8C0C530018DF51 /* Assets.xcassets */,
 				9F23D3572A8C0C530018DF51 /* LaunchScreen.storyboard */,
 				9F23D35A2A8C0C530018DF51 /* Info.plist */,
 			);
 			path = RightOnTarget;
+			sourceTree = "<group>";
+		};
+		9F307AAA2AB0527C004D872D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F307AAB2AB05298004D872D /* Color.swift */,
+				9F307AAD2AB052A7004D872D /* Game.swift */,
+				9F307AB02AB052C7004D872D /* GameFactory.swift */,
+				9F307AB22AB052E7004D872D /* SecretValue.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9F3332BA2A9131CF008F2A06 /* Buttons */ = {
@@ -152,11 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F3332B92A912E53008F2A06 /* SecondViewController.swift in Sources */,
-				9F23D3512A8C0C530018DF51 /* ViewController.swift in Sources */,
+				9F3332B92A912E53008F2A06 /* ColorViewController.swift in Sources */,
+				9F23D3512A8C0C530018DF51 /* NumberViewController.swift in Sources */,
+				9F307AAE2AB052A7004D872D /* Game.swift in Sources */,
 				9F23D34D2A8C0C530018DF51 /* AppDelegate.swift in Sources */,
 				9F3332BC2A913202008F2A06 /* TealButton.swift in Sources */,
 				9F23D34F2A8C0C530018DF51 /* SceneDelegate.swift in Sources */,
+				9F307AB32AB052E7004D872D /* SecretValue.swift in Sources */,
+				9F307AB12AB052C7004D872D /* GameFactory.swift in Sources */,
+				9F307AAC2AB05298004D872D /* Color.swift in Sources */,
+				9F307AB62AB05318004D872D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
