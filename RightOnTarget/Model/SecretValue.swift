@@ -21,13 +21,17 @@ protocol SecretValueProtocol {
 
 struct SecretValue<T: Equatable>: SecretValueProtocol {
     typealias ValueType = T
+    
     var value: T
+    
     // замыкание для выбора случайного значения
     private let randomValueClosure: (T) -> T
+    
     init(initialValue: T, randomValueClosure: @escaping (T) -> T) {
         value = initialValue
         self.randomValueClosure = randomValueClosure
     }
+    
     mutating func setRandomValue(){
         self.value = randomValueClosure(self.value)
     }

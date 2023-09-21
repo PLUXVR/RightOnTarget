@@ -2,6 +2,8 @@
 // Сущность "Игра"
 //
 
+import UIKit
+
 
 /// Протокол, определяющий требования к классу Game
 protocol GameProtocol {
